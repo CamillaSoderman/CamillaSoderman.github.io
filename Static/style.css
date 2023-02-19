@@ -1,3 +1,31 @@
 body{
-background-color:#FAFCF5;
+  background-color:#FAFCF5;
+}
+
+nav{
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D6D6D6;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #B5B5B5;
 }
