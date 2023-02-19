@@ -16,6 +16,7 @@ ul {
 
 li {
   float: right;
+  justify-items: row-reverse;
 }
 
 li a {
