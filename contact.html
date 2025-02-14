@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body id="contact">
+    <input type="checkbox" id="nav-toggle">
+    <header>
+        <a href="index.html" class="logo">
+            <h2>Camilla Söderman </h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a id="navHome" href="index.html">Home</a></li>
+                <li><a id="navAbout" href="about.html">About</a></li>
+                <li><a id="navProject" href="project.html">Projects</a></li>
+                <li><a id="navContact" href="contact.html">Contact</a></li>
+                <li><a id="navFun" href="funstuff.html">Fun stuff</a> </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="toggle-input">☰</label>
+    </header>
+    <main>
+        <div class="popup" onclick="myFunction()">❤️
+            <span class="popuptext" id="myPopup">You are amazing!
+                     
+            </span>
+        <section>
+            <h1>Contact</h1>
+            <div class="project-section">
+                <article class="card">
+                    <div class="card-head-contact">
+                        <img src="img/linkedinicon.png">
+                        
+                    </div>
+                    <div class="card-body">
+                        
+                        <a href="www.linkedin.com/in/camilla-söderman-458098157" target="_blank"><h3>Linked In</h3></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-head-contact">
+                        <img src="img/githubicon.png">
+                    </div>
+                    <div class="card-body">
+                        
+                        <a href="https://github.com/CamillaSoderman" target="_blank"><h3>Github</h3></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-head-contact3">
+                        <img src="img/emailicon.png">
+                    </div>
+                    <div class="card-body">
+
+
+                        <h3>Email</h3>
+
+<div class="popupEmail" onclick="myFunctionEmail()">Send me an email
+    <span class="popuptext" id="myPopupEmail">Send me an email!
+        <form id="popupform" action="camilla.e.soderman@gmail.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input id="submitemail"onclick="myFunctionSubmit()" type="submit" value="Send">
+            <input id="resetemail" onclick="myFunctionreset()" type="reset" value="Reset">
+            </form>
+        
+    </span>
+  
+  
+
+                        
+                    </div>
+                </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

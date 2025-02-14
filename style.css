@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(173, 72, 143);
+}
+
+nav {
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+
+header nav ul li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #070707;
+
+    margin: 0 1rem;
+    padding: 0.4rem;
+}
+
+header nav ul li a:hover {
+    color: rgb(225, 219, 224);
+}
+
+.logo{
+    text-decoration: none;
+    height: 2em;
+    margin: auto;
+}
+
+h2 {
+    color: rgb(250, 246, 248);
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.toggle-input {
+    display: none;
+    z-index: 1;
+}
+
+main{
+    min-height: 100vh;
+    background-color: rgb(255, 254, 253);
+    
+}
+
+section h1{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.project-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 13rem;
+    background-color: rgb(185, 128, 164);
+    margin: 1rem;
+    padding-bottom: 1em;
+}
+
+.card-head{
+    height: 10rem;
+    overflow: hidden;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-head img{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.card-head-contact img{
+    width: 100%;
+    height: auto;
+    
+}
+.card-head-contact3 img{
+    width: 99%;
+    height: auto;
+
+    
+}
+
+body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #navProject, body#contact #navContact {
+    text-decoration: underline;
+}
+
+
+@media(max-width:800px){
+    .card{
+        max-width: 100%
+    }
+}
+
+@media(max-width:500px) {
+    .toggle-input {
+        display: block;
+        margin: auto;
+    }
+
+    header nav ul {
+        display: none;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
+
+    header nav li {
+        padding-top: 2rem;
+    }
+
+    #nav-toggle:checked~header nav ul {
+        display: block;
+        position: fixed;
+        background-color: rgba(185, 128, 164, 0.586);
+        z-index: 1;
+        color: black;
+
+    }
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    
+  
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: center;
+    z-index: 50%;
+    bottom: 50%;
+
+ 
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  .popupEmail {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    
+  
+  }
+  
+  /* The actual popup */
+  .popupEmail .popuptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: center;
+    z-index: 50%;
+    bottom: 50%;
+
+ 
+  }
+  #popupform {
+    background-color: #555;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popupEmail .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+ 
