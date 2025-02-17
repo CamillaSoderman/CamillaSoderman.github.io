@@ -22,47 +22,37 @@
                 <li><a id="navAbout" href="about.html">About</a></li>
                 <li><a id="navProject" href="project.html">Projects</a></li>
                 <li><a id="navContact" href="contact.html">Contact</a></li>
-                <li><a id="navFun" href="funstuff.html">Fun stuff</a> </li>
+                <li><a id="navFun" href="funstuff.html">Experiance</a> </li>
                 
             </ul>
         </nav>
         <label for="nav-toggle" class="toggle-input">☰</label>
     </header>
     <main>
-        <div class="popup" onclick="myFunction()">❤️
-            <span class="popuptext" id="myPopup">You are amazing!
-                     
-            </span>
+       
+        <button type="button" class="backgroundbutton" onclick="changebackground()">❤️</button>
+   
+
+        <div id="eastereggpopup">
+            <p>You are Amazing!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
         <section>
             <h1>About</h1>
             <div class="project-section">
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://picsum.photos/200/300">
+                <article class="card-profile">
+                    <div class="card-head-profile">
+                        <img src="img/profilepic.png">
                     </div>
-                    <div class="card-body">
-                        <h3>Rubrik 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magni officia, aperiam at quaerat deserunt quod quae laboriosam libero aspernatur, doloremque vitae aliquid? Excepturi harum delectus dignissimos corporis ea esse.</p>
+                    <div class="card-body-profile">
+                        <h3>Camilla Söderman</h3>
+                        <p>Aspiering Fullstack .net developer.
+                        <br>Stationed in Stockholm, Sweden.
+                        <br>Avaliable as an intern autum 2025.
+                        </p>
                     </div>
-                </article>
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://picsum.photos/200/300">
-                    </div>
-                    <div class="card-body">
-                        <h3>Rubrik 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magni officia, aperiam at quaerat deserunt quod quae laboriosam libero aspernatur, doloremque vitae aliquid? Excepturi harum delectus dignissimos corporis ea esse.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://picsum.photos/200/300">
-                    </div>
-                    <div class="card-body">
-                        <h3>Rubrik 1</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magni officia, aperiam at quaerat deserunt quod quae laboriosam libero aspernatur, doloremque vitae aliquid? Excepturi harum delectus dignissimos corporis ea esse.</p>
-                    </div>
-                </article>
+                
+                
             </div>
         </section>
     </main>

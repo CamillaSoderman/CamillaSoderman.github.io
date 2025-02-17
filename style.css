@@ -55,7 +55,7 @@ h2 {
 
 main{
     min-height: 100vh;
-    background-color: rgb(255, 254, 253);
+  
     
 }
 
@@ -72,7 +72,7 @@ section h1{
 
 .card{
     width: 13rem;
-    background-color: rgb(185, 128, 164);
+    background-color: #b980a4;
     margin: 1rem;
     padding-bottom: 1em;
 }
@@ -91,6 +91,53 @@ section h1{
     transform: translateY(-50%);
 }
 
+.project-section-experiance{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-experiance{
+    width: 13rem;
+    background-color: #b980a4;
+    margin: 1rem;
+    padding-bottom: 1em;
+}
+
+.card-head-experiance{
+    height: 10rem;
+    overflow: hidden;
+}
+
+.card-body-experiance{
+    text-align: center;
+}
+
+.card-head-experiance img{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.card-profile{
+    width: 35rem;
+    background-color: #b980a4;
+    margin: 1rem;
+    padding-bottom: 1em;
+}
+
+.card-head-profile{
+    height: 35rem;
+    overflow: hidden;
+}
+
+.card-body-profile{
+    text-align: center;
+}
+
+.card-head-profile img{
+    width: 100%;
+    
+}
 .card-head-contact img{
     width: 100%;
     height: auto;
@@ -98,15 +145,20 @@ section h1{
 }
 .card-head-contact3 img{
     width: 99%;
+    height: auto; 
+}
+.card-head-project1 img{
+    width: 100%;
     height: auto;
-
-    
 }
 
 body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #navProject, body#contact #navContact {
     text-decoration: underline;
 }
 
+.infobutton {
+    
+}
 
 @media(max-width:800px){
     .card{
@@ -136,7 +188,7 @@ body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #
     #nav-toggle:checked~header nav ul {
         display: block;
         position: fixed;
-        background-color: rgba(185, 128, 164, 0.586);
+        background-color: rgba(185, 128, 164, 0.904);
         z-index: 1;
         color: black;
 
@@ -153,8 +205,6 @@ body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #
     -ms-user-select: none;
     user-select: none;
     
-    
-  
   }
   
   /* The actual popup */
@@ -170,7 +220,6 @@ body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #
     z-index: 50%;
     bottom: 50%;
 
- 
   }
   
   /* Toggle this class - hide and show the popup */
@@ -188,13 +237,11 @@ body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
-    
-  
+ 
   }
   
   /* The actual popup */
-  .popupEmail .popuptext {
+  .popupEmail .popuptextemail {
     visibility: hidden;
     width: 100%;
     background-color: #555;
@@ -212,11 +259,22 @@ body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #
     background-color: #555;
   }
   
-  /* Toggle this class - hide and show the popup */
+ /* Toggle this class - hide and show the popup */
   .popupEmail .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
 
- 
+  #eastereggpopup {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
