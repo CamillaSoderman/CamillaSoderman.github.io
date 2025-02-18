@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: 'Albert Sans';
+    font-size: auto;
+}
 
 header {
     display: flex;
@@ -152,13 +156,33 @@ section h1{
     height: auto;
 }
 
+.card-index{
+    width: 20rem;
+    background-color: #b980a4;
+    margin: 1rem;
+    padding-bottom: 1em;
+}
+
+.card-head-index{
+    height: 20rem;
+    overflow: hidden;
+}
+
+.card-body-index{
+    text-align: center;
+}
+
+.card-head-index img{
+    width: 100%;
+    
+}
+
+
+
 body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #navProject, body#contact #navContact {
     text-decoration: underline;
 }
 
-.infobutton {
-    
-}
 
 @media(max-width:800px){
     .card{
@@ -191,6 +215,7 @@ body#index #navHome, body#funstuff #navFun, body#about #navAbout, body#project #
         background-color: rgba(185, 128, 164, 0.904);
         z-index: 1;
         color: black;
+        font-size: large;
 
     }
 }
